@@ -1,0 +1,21 @@
+# Windows - 跳过 AMSI
+
+:warning: 本页内容已迁至 [InternalAllTheThings/redteam/evasion/windows-amsi-bypass](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/)
+
+- [列出 AMSI 提供程序](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#列出-amsi-提供程序)
+- [哪个端点保护正在使用 AMSI](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#哪个端点保护正在使用-amsi)
+- [由 rasta-mouse 打补丁的 amsi.dll AmsiScanBuffer](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#修补-amsi.dll-AmsiScanBuffer-由-rasta-mouse)
+- [不使用 net webclient](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#不要使用-net-webclient)
+- [来自 -> https://www.contextis.com/de/blog/amsi-bypass 的 Amsi ScanBuffer 补丁](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#Amsi-ScanBuffer-补丁)
+- [强制错误](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#强制错误)
+- [禁用脚本日志记录](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#禁用脚本日志记录)
+- [Amsi 缓冲区补丁 - 内存中](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#Amsi-缓冲区补丁---内存中)
+- [与 6 相同，但使用整数字节而不是 Base64](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#与-6-相同，但使用整数字节而不是-Base64)
+- [使用 Matt Graeber 的反射方法](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#使用-Matt-Graeber-的反射方法)
+- [使用 Matt Graeber 的反射方法和 WMF5 自动记录绕过](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#使用-Matt-Graeber-的反射方法和-WMF5-自动记录绕过)
+- [使用 Matt Graeber 的第二个反射方法](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#使用-Matt-Graeber-的第二个反射方法)
+- [使用 Cornelis de Plaa 的 DLL 劫持方法](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#使用-Cornelis-de-Plaa-的-DLL-劫持方法")
+- [使用 PowerShell 版本 2 - 那里没有 AMSI 支持](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#使用-PowerShell-版本-2)
+- [Nishang 一体化](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#Nishang-一体化)
+- [Adam Chesters 补丁](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#Adam-Chesters-补丁)
+- [AMSI.fail](https://swisskyrepo.github.io/InternalAllTheThings/redteam/evasion/windows-amsi-bypass/#amsifail)
